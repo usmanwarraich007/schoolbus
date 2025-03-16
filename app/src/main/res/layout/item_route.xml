@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.App.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/routeIconImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/route_icon"
+            android:padding="@dimen/margin_small"
+            android:src="@drawable/ic_route"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:id="@+id/routeNameTextView"
+            style="@style/TextAppearance.App.Subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toStartOf="@+id/statusTextView"
+            app:layout_constraintStart_toEndOf="@+id/routeIconImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Morning Route - North" />
+
+        <TextView
+            android:id="@+id/busNumberTextView"
+            style="@style/TextAppearance.App.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:drawablePadding="@dimen/margin_small"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:drawableStartCompat="@drawable/ic_bus"
+            app:layout_constraintEnd_toStartOf="@+id/timeTextView"
+            app:layout_constraintStart_toEndOf="@+id/routeIconImageView"
+            app:layout_constraintTop_toBottomOf="@+id/routeNameTextView"
+            tools:text="Bus #123" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            style="@style/TextAppearance.App.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_small"
+            app:drawableStartCompat="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="@+id/busNumberTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/busNumberTextView"
+            tools:text="7:30 AM" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_status_active"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingTop="2dp"
+            android:paddingEnd="@dimen/margin_small"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Active" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/divider"
+            app:layout_constraintTop_toBottomOf="@+id/busNumberTextView" />
+
+        <TextView
+            android:id="@+id/stopsCountTextView"
+            style="@style/TextAppearance.App.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:drawablePadding="@dimen/margin_small"
+            app:drawableStartCompat="@drawable/ic_stop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="12 stops" />
+
+        <TextView
+            android:id="@+id/daysTextView"
+            style="@style/TextAppearance.App.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:drawablePadding="@dimen/margin_small"
+            app:drawableStartCompat="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="Mon, Wed, Fri" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView> 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Theme is defined in styles.xml -->
+
+    <!-- Base application theme -->
+    <style name="Theme.SchoolBus" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorTertiary">@color/text_tertiary</item>
+        <!-- Component styles -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.App.Headline</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.App.Title</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.App.Subtitle</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.App.Caption</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Primary</item>
+        <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.SchoolBus.Splash" parent="Theme.SchoolBus">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!-- Dark theme -->
+    <style name="Theme.SchoolBus.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="colorSurface">@color/text_primary</item>
+        <item name="colorOnSurface">@color/white</item>
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/text_tertiary</item>
+        <item name="android:textColorTertiary">@color/text_secondary</item>
+        <!-- Component styles -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.App.Headline</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.App.Title</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.App.Subtitle</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.App.Body</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.App.Caption</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Primary</item>
+        <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+    </style>
+</resources>

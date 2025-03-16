@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "483946282865",
+    "firebase_url": "https://schoolbus-608e7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "schoolbus-608e7",
+    "storage_bucket": "schoolbus-608e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483946282865:android:66a679acd30c5d0aaec0d0",
+        "android_client_info": {
+          "package_name": "com.schoolbus.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeUWwmMXsGKyg5To6xyBJkdbuzlv6Gad4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

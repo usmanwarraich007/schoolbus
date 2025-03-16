@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.schoolbus.app.fragments.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="com.schoolbus.app.fragments.TrackingFragment"
+        android:label="@string/tracking"
+        tools:layout="@layout/fragment_tracking" />
+
+    <fragment
+        android:id="@+id/routesFragment"
+        android:name="com.schoolbus.app.fragments.RoutesFragment"
+        android:label="@string/routes"
+        tools:layout="@layout/fragment_routes">
+        <action
+            android:id="@+id/action_routesFragment_to_routeDetailsFragment"
+            app:destination="@id/routeDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/routeDetailsFragment"
+        android:name="com.schoolbus.app.fragments.RouteDetailsFragment"
+        android:label="@string/route_details"
+        tools:layout="@layout/fragment_route_details">
+        <argument
+            android:name="routeId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.schoolbus.app.fragments.NotificationsFragment"
+        android:label="@string/notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.schoolbus.app.fragments.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation> 

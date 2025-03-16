@@ -1,0 +1,13 @@
+{
+  "name": "schoolbus-firebase-tools",
+  "version": "1.0.0",
+  "description": "Tools for SchoolBus app Firebase setup",
+  "main": "firebase-import.js",
+  "scripts": {
+    "import": "node firebase-import.js"
+  },
+  "dependencies": {
+    "firebase": "^9.22.0"
+  },
+  "private": true
+} 

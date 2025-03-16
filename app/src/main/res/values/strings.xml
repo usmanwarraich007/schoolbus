@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">SchoolBus</string>
+    
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="retry">Retry</string>
+    <string name="app_logo">App Logo</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_tracking">Tracking</string>
+    <string name="nav_routes">Routes</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="create_account">Create Account</string>
+    <string name="please_fill_in_your_details">Please fill in your details</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="enter_your_email_to_receive_password_reset_instructions">Enter your email to receive password reset instructions</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="user_type">User Type</string>
+    <string name="parent">Parent</string>
+    <string name="driver">Driver</string>
+    <string name="admin">Admin</string>
+    
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="settings">Settings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="generate_dummy_data">Generate Dummy Data</string>
+    
+    <!-- Notifications -->
+    <string name="notifications">Notifications</string>
+    <string name="no_notifications">No Notifications</string>
+    <string name="you_don_t_have_any_notifications_yet">You don\'t have any notifications yet</string>
+    <string name="mark_all_as_read">Mark All as Read</string>
+    
+    <!-- Routes -->
+    <string name="routes">Routes</string>
+    <string name="route_details">Route Details</string>
+    <string name="no_routes">No Routes</string>
+    <string name="no_routes_available_for_you">No routes are available for you at this time</string>
+    <string name="view_details">View Details</string>
+    <string name="track">Track</string>
+    <string name="track_bus">Track Bus</string>
+    <string name="btn_track_bus">Track Bus</string>
+    <string name="route_icon">Route Icon</string>
+    <string name="bus_information">Bus Information</string>
+    <string name="schedule">Schedule</string>
+    
+    <!-- Stops -->
+    <string name="stops">Stops</string>
+    <string name="no_stops_available">No stops available</string>
+    <string name="view_on_map">View on Map</string>
+    
+    <!-- Tracking -->
+    <string name="tracking">Tracking</string>
+    <string name="current_location">Current Location</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="estimated_arrival">Estimated Arrival</string>
+    <string name="distance">Distance</string>
+    <string name="bus_status">Bus Status</string>
+    
+    <!-- Plurals -->
+    <plurals name="stops_count">
+        <item quantity="one">%d stop</item>
+        <item quantity="other">%d stops</item>
+    </plurals>
+    
+    <!-- Error messages -->
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_invalid_password">Password must be at least 6 characters</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_passwords_dont_match">Passwords don\'t match</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_login_failed">Login failed. Please check your credentials.</string>
+    <string name="error_registration_failed">Registration failed. Please try again.</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_unknown">An unknown error occurred. Please try again.</string>
+    <string name="error_email_required">Email is required</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_name_required">Name is required</string>
+    <string name="error_phone_required">Phone number is required</string>
+    <string name="error_creating_profile">Failed to create user profile</string>
+    <string name="msg_register_success">Registration successful</string>
+    <string name="msg_register_failed">Registration failed</string>
+    <string name="msg_no_data">No data available</string>
+    
+    <!-- Success messages -->
+    <string name="success_password_reset">Password reset email sent successfully</string>
+    <string name="success_registration">Registration successful</string>
+    <string name="registration_successful">Registration successful</string>
+    
+    <!-- New strings from the code block -->
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="home">Home</string>
+    <string name="bus_location">Bus Location</string>
+    <string name="estimated_arrival_formatted">Estimated Arrival: %1$s</string>
+    <string name="distance_remaining_formatted">Distance: %1$s km</string>
+    <string name="next_stop_formatted">Next Stop: %1$s</string>
+    <string name="no_active_bus">No active bus on this route</string>
+    <string name="tracking_unavailable">Tracking unavailable</string>
+    <string name="route_name">Route Name: %1$s</string>
+    <string name="bus_number">Bus Number: %1$s</string>
+    <string name="driver_name">Driver: %1$s</string>
+    <string name="start_time">Start Time: %1$s</string>
+    <string name="end_time">End Time: %1$s</string>
+    <string name="days">Days: %1$s</string>
+    <string name="children">Children</string>
+    <string name="add_child">Add Child</string>
+    <string name="child_name">Child Name</string>
+    <string name="grade">Grade</string>
+    <string name="school">School</string>
+    <string name="bus">Bus</string>
+    <string name="language">Language</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="version">Version %1$s</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="error_login">Login failed. Please check your credentials.</string>
+    <string name="error_register">Registration failed. Please try again.</string>
+    <string name="error_reset_password">Password reset failed. Please try again.</string>
+    <string name="error_location_permission">Location permission is required for tracking.</string>
+    <string name="error_location_disabled">Location services are disabled. Please enable them.</string>
+    <string name="error_general">Something went wrong. Please try again.</string>
+    <string name="success_login">Login successful.</string>
+    <string name="success_register">Registration successful. Please login.</string>
+    <string name="success_reset_password">Password reset link sent to your email.</string>
+    <string name="success_profile_update">Profile updated successfully.</string>
+    <string name="success_child_add">Child added successfully.</string>
+    <string name="success_child_update">Child information updated successfully.</string>
+    <string name="success_child_delete">Child removed successfully.</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="child_picture">Child Picture</string>
+    <string name="notification_icon">Notification Icon</string>
+    <string name="edit_child">Edit Child</string>
+</resources>

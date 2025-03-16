@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.App.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/notificationIconImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/notification_icon"
+            android:padding="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/primary"
+            tools:src="@drawable/ic_notifications" />
+
+        <TextView
+            android:id="@+id/notificationTitleTextView"
+            style="@style/TextAppearance.App.Subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toStartOf="@+id/notificationTimeTextView"
+            app:layout_constraintStart_toEndOf="@+id/notificationIconImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Bus Delay Notification" />
+
+        <TextView
+            android:id="@+id/notificationMessageTextView"
+            style="@style/TextAppearance.App.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/notificationIconImageView"
+            app:layout_constraintTop_toBottomOf="@+id/notificationTitleTextView"
+            tools:text="Bus #123 on Route 'Morning Route - North' will be delayed by approximately 15 minutes due to traffic." />
+
+        <TextView
+            android:id="@+id/notificationTimeTextView"
+            style="@style/TextAppearance.App.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="10:30 AM" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/divider"
+            app:layout_constraintTop_toBottomOf="@+id/notificationMessageTextView" />
+
+        <TextView
+            android:id="@+id/routeInfoTextView"
+            style="@style/TextAppearance.App.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:drawablePadding="@dimen/margin_small"
+            app:drawableStartCompat="@drawable/ic_route"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="Morning Route - North" />
+
+        <TextView
+            android:id="@+id/busInfoTextView"
+            style="@style/TextAppearance.App.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:drawablePadding="@dimen/margin_small"
+            app:drawableStartCompat="@drawable/ic_bus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="Bus #123" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView> 

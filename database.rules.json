@@ -1,0 +1,38 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && auth.uid == $uid",
+        ".read": "auth != null && root.child('users').child(auth.uid).child('type').val() == 'admin'"
+      },
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    
+    "schools": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('type').val() == 'admin'"
+    },
+    
+    "buses": {
+      ".read": "auth != null",
+      "$busId": {
+        ".write": "auth != null && (root.child('users').child(auth.uid).child('type').val() == 'admin' || (root.child('users').child(auth.uid).child('type').val() == 'driver' && root.child('users').child(auth.uid).child('busId').val() == $busId))"
+      }
+    },
+    
+    "routes": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('type').val() == 'admin'"
+    },
+    
+    "notifications": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('type').val() == 'admin'"
+    }
+  }
+} 

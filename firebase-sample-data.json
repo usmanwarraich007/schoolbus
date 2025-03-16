@@ -1,0 +1,186 @@
+{
+  "users": {
+    "parent1": {
+      "email": "parent@example.com",
+      "name": "John Smith",
+      "phone": "+1234567890",
+      "type": "parent",
+      "children": {
+        "child1": {
+          "name": "Emma Smith",
+          "grade": "5",
+          "schoolId": "school1",
+          "busId": "bus1"
+        }
+      }
+    },
+    "driver1": {
+      "email": "driver@example.com",
+      "name": "Michael Johnson",
+      "phone": "+1987654321",
+      "type": "driver",
+      "busId": "bus1"
+    },
+    "admin1": {
+      "email": "admin@example.com",
+      "name": "Sarah Williams",
+      "phone": "+1122334455",
+      "type": "admin",
+      "schoolId": "school1"
+    }
+  },
+  "schools": {
+    "school1": {
+      "name": "Lincoln Elementary School",
+      "address": "123 Education St, Springfield, IL",
+      "phone": "+1555123456",
+      "email": "info@lincolnelementary.edu",
+      "buses": {
+        "bus1": true,
+        "bus2": true
+      }
+    }
+  },
+  "buses": {
+    "bus1": {
+      "busNumber": "B001",
+      "capacity": 40,
+      "driverId": "driver1",
+      "driverName": "Michael Johnson",
+      "routeId": "route1",
+      "routeName": "Morning Route A",
+      "status": "active",
+      "currentLocation": {
+        "latitude": 40.712776,
+        "longitude": -74.005974,
+        "lastUpdated": 1659312000000
+      },
+      "stops": {
+        "stop1": {
+          "name": "Main St & 5th Ave",
+          "order": 1,
+          "scheduledTime": "07:30",
+          "location": {
+            "latitude": 40.712776,
+            "longitude": -74.005974
+          }
+        },
+        "stop2": {
+          "name": "Park Ave & 10th St",
+          "order": 2,
+          "scheduledTime": "07:45",
+          "location": {
+            "latitude": 40.713776,
+            "longitude": -74.006974
+          }
+        },
+        "stop3": {
+          "name": "Lincoln Elementary School",
+          "order": 3,
+          "scheduledTime": "08:00",
+          "location": {
+            "latitude": 40.714776,
+            "longitude": -74.007974
+          }
+        }
+      }
+    },
+    "bus2": {
+      "busNumber": "B002",
+      "capacity": 35,
+      "driverId": "driver2",
+      "driverName": "Robert Davis",
+      "routeId": "route2",
+      "routeName": "Afternoon Route B",
+      "status": "inactive",
+      "currentLocation": {
+        "latitude": 40.714776,
+        "longitude": -74.007974,
+        "lastUpdated": 1659312000000
+      },
+      "stops": {
+        "stop1": {
+          "name": "Lincoln Elementary School",
+          "order": 1,
+          "scheduledTime": "15:00",
+          "location": {
+            "latitude": 40.714776,
+            "longitude": -74.007974
+          }
+        },
+        "stop2": {
+          "name": "Oak St & 3rd Ave",
+          "order": 2,
+          "scheduledTime": "15:15",
+          "location": {
+            "latitude": 40.713776,
+            "longitude": -74.006974
+          }
+        },
+        "stop3": {
+          "name": "Maple Dr & Pine St",
+          "order": 3,
+          "scheduledTime": "15:30",
+          "location": {
+            "latitude": 40.712776,
+            "longitude": -74.005974
+          }
+        }
+      }
+    }
+  },
+  "routes": {
+    "route1": {
+      "name": "Morning Route A",
+      "description": "Morning pickup route for Lincoln Elementary",
+      "schoolId": "school1",
+      "busId": "bus1",
+      "startTime": "07:30",
+      "endTime": "08:00",
+      "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "stops": {
+        "stop1": true,
+        "stop2": true,
+        "stop3": true
+      }
+    },
+    "route2": {
+      "name": "Afternoon Route B",
+      "description": "Afternoon dropoff route for Lincoln Elementary",
+      "schoolId": "school1",
+      "busId": "bus2",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "stops": {
+        "stop1": true,
+        "stop2": true,
+        "stop3": true
+      }
+    }
+  },
+  "notifications": {
+    "notification1": {
+      "title": "Bus Delay",
+      "message": "Bus B001 is running 10 minutes late due to traffic",
+      "type": "delay",
+      "busId": "bus1",
+      "routeId": "route1",
+      "timestamp": 1659312000000,
+      "recipients": {
+        "parent1": true
+      }
+    },
+    "notification2": {
+      "title": "Route Change",
+      "message": "Bus B002 will be taking an alternate route today due to road construction",
+      "type": "route_change",
+      "busId": "bus2",
+      "routeId": "route2",
+      "timestamp": 1659398400000,
+      "recipients": {
+        "parent1": true
+      }
+    }
+  }
+} 
